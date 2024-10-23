@@ -7,12 +7,12 @@ import random
 
 nombreServidor = 'localhost'
 puertoServidor = 12000
-TAMANO_VENTANA = 4
-TIMEOUT = 3
+TAMANO_VENTANA = 3
+TIMEOUT = 8
 
 socket_servidor = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-mensajes = ["0:mensaje", "1:mensaje", "2:mensaje", "3:mensaje"]
+mensajes = ["0:mensaje", "1:mensaje", "2:mensaje", "3:mensaje","4:mensaje", "5:mensaje", "6:mensaje"]
 acknowledged = set()
 
 temporizadores = {}
