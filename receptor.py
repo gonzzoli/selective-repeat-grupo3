@@ -14,6 +14,7 @@ def enviar_ack(numero_trama, direccion_servidor):
     socket_cliente.sendto(f"{numero_trama}".encode(), direccion_servidor)
 
 while True:
+    print("~ESPERANDO ALGÚN MENSAJE...~")
     mensaje, direccion_servidor = socket_cliente.recvfrom(2048)
     print(f"RECIBIDO DESDE {direccion_servidor}")
     checksum, nro_trama_recibida, mensaje = mensaje.decode().split(":")
@@ -45,4 +46,5 @@ while True:
         buffer[nro_trama_recibida] = mensaje
     
     enviar_ack(nro_trama_recibida, direccion_servidor)
+    print("~RECEPCIÓN FINALIZADA~")
 
