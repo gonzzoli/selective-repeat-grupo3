@@ -112,5 +112,5 @@ if __name__ == "__main__":
 
     for i in range(cantidad_mensajes):
         mensajes.append(f"{i}:mensaje {i}")
-    print(f"Mensajes generadas: {mensajes}")
+    print(f"Mensajes generados: {mensajes}")
     emisor()
