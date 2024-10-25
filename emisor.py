@@ -101,7 +101,9 @@ def emisor():
             secuencia_base += 1
             print(f"Secuencia base incrementada: {secuencia_base}")
 
-    socket_emisor.close()
+            
+            socket_emisor.close()
+        print("~TODOS LOS MENSAJES TRANSMITIDOS~")
 
 if __name__ == "__main__":
     cantidad_mensajes = int(input("Ingrese la cantidad de mensajes a enviar: "))
